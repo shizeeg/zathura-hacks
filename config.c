@@ -207,6 +207,8 @@ config_load_default(zathura_t* zathura)
   bool_value = true;
   girara_setting_add(gsession, "abort-clear-search",     &bool_value,  BOOLEAN, false, _("Clear search results on abort"), NULL, NULL);
   bool_value = false;
+  girara_setting_add(gsession, "window-title-curpage",   &bool_value,  BOOLEAN, false, _("Show current page / page total in window title"), NULL, NULL);
+  bool_value = false;
   girara_setting_add(gsession, "window-title-basename",  &bool_value,  BOOLEAN, false, _("Use basename of the file in the window title"), NULL, NULL);
   bool_value = false;
   girara_setting_add(gsession, "statusbar-basename",     &bool_value,  BOOLEAN, false, _("Use basename of the file in the statusbar"), NULL, NULL);
