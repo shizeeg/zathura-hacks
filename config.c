@@ -212,6 +212,8 @@ config_load_default(zathura_t* zathura)
   girara_setting_add(gsession, "window-title-basename",  &bool_value,  BOOLEAN, false, _("Use basename of the file in the window title"), NULL, NULL);
   bool_value = false;
   girara_setting_add(gsession, "statusbar-basename",     &bool_value,  BOOLEAN, false, _("Use basename of the file in the statusbar"), NULL, NULL);
+  bool_value = true;
+  girara_setting_add(gsession, "statusbar-show",         &bool_value,  BOOLEAN, false, _("Show statusbar"), NULL, NULL);
   bool_value = false;
   girara_setting_add(gsession, "synctex",                &bool_value,  BOOLEAN, false, _("Enable synctex support"), NULL, NULL);
 

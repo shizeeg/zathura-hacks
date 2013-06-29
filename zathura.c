@@ -662,6 +662,13 @@ document_open(zathura_t* zathura, const char* path, const char* password,
     g_free(tmp);
   }
 
+  /* hide statusbar if statusbar-show set to false */
+  bool statusbar_show = true;
+  girara_setting_get(zathura->ui.session, "statusbar-show", &statusbar_show);
+  if (statusbar_show == false) {
+    gtk_widget_hide(GTK_WIDGET(zathura->ui.session->gtk.statusbar));
+  }
+
   /* install file monitor */
   file_uri = g_filename_to_uri(file_path, NULL, NULL);
   if (file_uri == NULL) {

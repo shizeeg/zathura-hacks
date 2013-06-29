@@ -1244,8 +1244,12 @@ sc_toggle_fullscreen(girara_session_t* session, girara_argument_t*
     /* reset first page column */
     girara_setting_set(session, "first-page-column", &first_page_column);
 
-    /* show status bar */
-    gtk_widget_show(GTK_WIDGET(session->gtk.statusbar));
+    /* show status bar if option set */
+    bool statusbar_show = true;
+    girara_setting_get(session, "statusbar-show", &statusbar_show);
+    if (statusbar_show == true) {
+      gtk_widget_show(GTK_WIDGET(session->gtk.statusbar));
+    }
 
     /* set full screen */
     gtk_window_unfullscreen(GTK_WINDOW(session->gtk.window));
@@ -1255,7 +1259,7 @@ sc_toggle_fullscreen(girara_session_t* session, girara_argument_t*
     render_all(zathura);
     page_set_delayed(zathura, zathura_document_get_current_page_number(zathura->document));
 
-    /* setm ode */
+    /* set mode */
     girara_mode_set(session, zathura->modes.normal);
   } else {
     /* backup pages per row */
@@ -1283,7 +1287,7 @@ sc_toggle_fullscreen(girara_session_t* session, girara_argument_t*
     gtk_window_fullscreen(GTK_WINDOW(session->gtk.window));
     page_set_delayed(zathura, zathura_document_get_current_page_number(zathura->document));
 
-    /* setm ode */
+    /* set mode */
     girara_mode_set(session, zathura->modes.fullscreen);
   }
 
