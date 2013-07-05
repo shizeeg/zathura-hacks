@@ -3,6 +3,7 @@
 #
 # Translators:
 # Mikhail Krutov <>, 2012.
+# Shizeeg Unadequatov <>, 2013.
 msgid ""
 msgstr ""
 "Project-Id-Version: zathura\n"
@@ -107,22 +108,22 @@ msgstr "Файл %s сохранён в %s"
 #: ../commands.c:480
 #, c-format
 msgid "Wrote image '%s' to '%s'."
-msgstr ""
+msgstr "Изображение '%s' записано в '%s'."
 
 #: ../commands.c:482
 #, c-format
 msgid "Couldn't write image '%s' to '%s'."
-msgstr ""
+msgstr "Не могу записать изображение '%s' в '%s'."
 
 #: ../commands.c:489
 #, c-format
 msgid "Unknown image '%s'."
-msgstr ""
+msgstr "Неизвестное изображение '%s'."
 
 #: ../commands.c:493
 #, c-format
 msgid "Unknown attachment or image '%s'."
-msgstr ""
+msgstr "Неизвестное '%s'."
 
 #: ../commands.c:544
 msgid "Argument must be a number."
@@ -131,16 +132,16 @@ msgstr "Аргумент должен быть числом"
 #: ../completion.c:250
 #, c-format
 msgid "Page %d"
-msgstr ""
+msgstr "Страница %d"
 
 #: ../completion.c:293
 msgid "Attachments"
-msgstr ""
+msgstr "Прикреплённые файлы"
 
 #. add images
 #: ../completion.c:324
 msgid "Images"
-msgstr ""
+msgstr "Изображения"
 
 #. zathura settings
 #: ../config.c:139
@@ -169,7 +170,7 @@ msgstr "Шаг прокрутки"
 
 #: ../config.c:151
 msgid "Horizontal scroll step"
-msgstr ""
+msgstr "Шаг прокрутки по горизонтали"
 
 #: ../config.c:153
 msgid "Full page scroll overlap"
@@ -185,11 +186,11 @@ msgstr "Максимальное увеличение"
 
 #: ../config.c:159
 msgid "Maximum number of pages to keep in the cache"
-msgstr ""
+msgstr "Максимальное количество страниц в кэше"
 
 #: ../config.c:161
 msgid "Number of positions to remember in the jumplist"
-msgstr ""
+msgstr "Количество позиций в списке переходов"
 
 #: ../config.c:163
 msgid "Recoloring (dark color)"
@@ -209,11 +210,11 @@ msgstr "Цвет для подсветки (активной)"
 
 #: ../config.c:171
 msgid "'Loading ...' background color"
-msgstr ""
+msgstr "Цвет фона 'Загрузка ...'"
 
 #: ../config.c:173
 msgid "'Loading ...' foreground color"
-msgstr ""
+msgstr "Цвет шрифта 'Загрузка ...'"
 
 #: ../config.c:177
 msgid "Recolor pages"
@@ -221,7 +222,7 @@ msgstr "Перекрасить страницы"
 
 #: ../config.c:179
 msgid "When recoloring keep original hue and adjust lightness only"
-msgstr ""
+msgstr "При перекрашивании сохранять оттенок, изменять только яркость"
 
 #: ../config.c:181
 msgid "Wrap scrolling"
@@ -229,7 +230,7 @@ msgstr "Плавная прокрутка"
 
 #: ../config.c:183
 msgid "Page aware scrolling"
-msgstr ""
+msgstr "При прокрутке учитывать страницы"
 
 #: ../config.c:185
 msgid "Advance number of pages per row"
@@ -237,7 +238,7 @@ msgstr "Увеличить количество страниц в ряду"
 
 #: ../config.c:187
 msgid "Horizontally centered zoom"
-msgstr ""
+msgstr "При увеличении выравнивать по центру"
 
 #: ../config.c:189
 msgid "Align link target to the left"
@@ -245,7 +246,7 @@ msgstr ""
 
 #: ../config.c:191
 msgid "Center result horizontally"
-msgstr ""
+msgstr "Выравнивать результат по центру"
 
 #: ../config.c:193
 msgid "Transparency for highlighting"
@@ -273,7 +274,7 @@ msgstr "Всегда открывать на первой странице"
 
 #: ../config.c:204
 msgid "Highlight search results"
-msgstr ""
+msgstr "Подсвечивать результаты поиска"
 
 #: ../config.c:206
 msgid "Enable incremental search"
@@ -285,15 +286,15 @@ msgstr ""
 
 #: ../config.c:210
 msgid "Use basename of the file in the window title"
-msgstr ""
+msgstr "Не показывать полный путь к файлу в заголовке окна"
 
 #: ../config.c:212
 msgid "Use basename of the file in the statusbar"
-msgstr ""
+msgstr "Не показывать полный путь к файлу в статусбаре"
 
 #: ../config.c:214 ../main.c:64
 msgid "Enable synctex support"
-msgstr ""
+msgstr "Включить поддержку synctex"
 
 #. define default inputbar commands
 #: ../config.c:373
@@ -318,7 +319,7 @@ msgstr "Показать информацию о файле"
 
 #: ../config.c:378
 msgid "Execute a command"
-msgstr ""
+msgstr "Выполнить команду"
 
 #: ../config.c:379
 msgid "Show help"
@@ -362,15 +363,15 @@ msgstr "Удалить указанные пометки"
 
 #: ../config.c:389
 msgid "Don't highlight current search results"
-msgstr ""
+msgstr "Не подсвечивать результаты поиска"
 
 #: ../config.c:390
 msgid "Highlight current search results"
-msgstr ""
+msgstr "Подсвечивать результаты поиска"
 
 #: ../config.c:391
 msgid "Show version information"
-msgstr ""
+msgstr "Показать версию"
 
 #: ../links.c:171 ../links.c:250
 msgid "Failed to run xdg-open."
@@ -379,16 +380,16 @@ msgstr "Не удалось запустить xdg-open"
 #: ../links.c:189
 #, c-format
 msgid "Link: page %d"
-msgstr ""
+msgstr "Ссылка: стр. %d"
 
 #: ../links.c:196
 #, c-format
 msgid "Link: %s"
-msgstr ""
+msgstr "Ссылка: %s"
 
 #: ../links.c:200
 msgid "Link: Invalid"
-msgstr ""
+msgstr "Нерабочая ссылка"
 
 #: ../main.c:55
 msgid "Reparents to window specified by xid"
@@ -412,27 +413,27 @@ msgstr "Уйти в бэкграунд"
 
 #: ../main.c:60
 msgid "Document password"
-msgstr ""
+msgstr "Пароль к документу"
 
 #: ../main.c:61
 msgid "Page number to go to"
-msgstr ""
+msgstr "Перейти к странице под номером"
 
 #: ../main.c:62
 msgid "Log level (debug, info, warning, error)"
-msgstr "Уровень логирования (debug,info,warning,error)"
+msgstr "Уровень логирования (debug, info, warning, error)"
 
 #: ../main.c:63
 msgid "Print version information"
-msgstr "Показать информацию о файле"
+msgstr "Показать информацию о версии"
 
 #: ../main.c:65
 msgid "Synctex editor (forwarded to the synctex command)"
-msgstr ""
+msgstr "Редактор synctex (отправлено в synctex)"
 
 #: ../page-widget.c:460
 msgid "Loading..."
-msgstr ""
+msgstr "Загрузка..."
 
 #: ../page-widget.c:657
 #, c-format
@@ -445,7 +446,7 @@ msgstr "Скопировать изображение"
 
 #: ../page-widget.c:756
 msgid "Save image as"
-msgstr ""
+msgstr "Сохранить изображения как"
 
 #: ../shortcuts.c:1108
 msgid "This document does not contain any index"
@@ -453,8 +454,8 @@ msgstr "В документе нету индекса"
 
 #: ../zathura.c:224 ../zathura.c:956
 msgid "[No name]"
-msgstr "[No name]"
+msgstr "[Безымянный]"
 
 #: ../zathura.c:589
 msgid "Document does not contain any pages"
-msgstr ""
+msgstr "В документе нет страниц"
